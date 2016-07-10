@@ -1,0 +1,108 @@
+@font-face {
+  font-family: $global-font-icon;
+  src:url("../fonts/myicons.eot");
+  src:url("../fonts/myicons.?#iefix") format("embedded-opentype"),
+    url("../fonts/myicons.woff") format("woff"),
+    url("../fonts/myicons.ttf") format("truetype"),
+    url("../fonts/myicons.#myicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  font-family: $global-font-icon;
+  position: relative;
+    &:before {
+      font-size: $global-font-size * 3.2;
+      position: absolute;
+      top: -60px;
+      left: -50px;
+      color: $global-color_disselect;
+      transition: all .2s;
+    }
+    &:hover:before {
+    color: $global-color_red;
+}
+
+  &.-arrow {
+    &:before {
+      content: $icon-arrow;
+    }
+  }
+  &.-atom {
+    &:before {
+      content: $icon-atom;
+    }
+  }
+  &.-chats {
+    &:before {
+      content: $icon-chats;
+    }
+  }
+  &.-check {
+    &:before {
+      content: $icon-check;
+    }
+  }
+  &.-dashboard {
+    &:before {
+      content: $icon-dashboard;
+    }
+  }
+  &.-menu {
+    &:before {
+      content: $icon-menu;
+    }
+  }
+  &.-off {
+    &:before {
+      content: $icon-off;
+    }
+  }
+  &.-plain {
+    &:before {
+      content: $icon-plain;
+    }
+  }
+  &.-plus {
+    &:before {
+      content: $icon-plus;
+    }
+  }
+  &.-points {
+    &:before {
+      content: $icon-points;
+      top: -30px;
+      left: 40%;
+      font-size: 20px;
+    }
+    &:hover:before {
+      color: $global-color_disselect;
+    }
+  }
+  &.-reload {
+    &:before {
+      content: $icon-reload;
+    }
+  }
+  &.-reload2 {
+    &:before {
+      content: $icon-reload2;
+    }
+  }
+  &.-sheeel {
+    &:before {
+      content: $icon-sheeel;
+    }
+  }
+  &.-time {
+    &:before {
+      content: $icon-time;
+    }
+  }
+  &.-zoom {
+    &:before {
+      content: $icon-zoom;
+    }
+  }
+}
