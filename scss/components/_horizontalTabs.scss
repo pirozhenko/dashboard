@@ -1,0 +1,36 @@
+.horizotal--tabs a{
+	position: relative;
+	height: $circle-height * 2;
+	line-height: $circle-height;
+	font-size: $global-font-size * 1.25;
+	padding-left: 90px;
+	padding-right: 71px;
+	color: $black;
+	border-right: 1px solid #ccc;
+}
+.horizotal--tabs i:before {
+	top: -35px;
+}
+.horizotal--tabs {
+	background: #f1f1f1;
+}
+.horizotal--tabs a[aria-selected='true'] {
+	background: $white;
+}
+.horizotal--tabs a {
+	background: #f8f8f8;
+}
+.-time + span:before {
+	content: '9';
+	background: $dark-gray + 40%;
+}
+.horizotal--tabs span:before {
+	top: 15px;
+	right: 35px;
+}
+.horizotal--tabs .tabs-title:last-of-type a {
+	color: $light-gray;
+	border: none;
+	text-align: right;
+	margin-left: 0;
+}

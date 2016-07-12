@@ -50,4 +50,9 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 @import 'icons/all';
-@import 'main';
+@import 'components/main';
+@import 'components/icon';
+@import 'components/verticalTabs';
+@import 'components/headerTab';
+@import 'components/horizontalTabs';
+@import 'components/_accordion';

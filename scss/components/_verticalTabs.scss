@@ -1,0 +1,84 @@
+.set--width_minus {
+	width: ($global-width / 6) - 4.2rem;
+}
+.vertical_settings {
+	background: url(../img/bg.gif) repeat-y;
+	text-align: center;
+ }
+.tabs-logo {
+	height: 165px;
+	position: relative;
+}
+.settings--height {
+	height: 480px;
+}
+.tabs-logo span {
+	position: absolute;
+	display: block;
+	top: 25px;
+	left: 15%;
+	width: 90px;
+	height: 90px;
+	border-radius: $global-border-radius;
+	background: url("../img/logo-chat.jpg") 62% 2% no-repeat;
+}
+.tabs-title {
+	position: relative;
+}
+[href^="#"] span:before,
+.tabs-logo span:before {
+	content: '2';
+	position: absolute;
+	top: -5px;
+	right: 5px;
+	height: $line-height;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: $line-height;
+	color: $white;
+	background: $global-color_red;
+	border-radius: $global-border-radiusSpan;
+}
+.-menu + span:before {
+	content: '9';
+	top: 0;
+	right: 20px;
+	background: $dark-gray + 40%;
+}
+.-atom + span:before {
+	content: '3';
+	top: 0;
+	right: 20px;
+}
+.vertical_settings .tabs-title:not(:last-of-type) {
+	margin-bottom: 20px;
+}
+.vertical_settings .tabs-title a {
+	height: 115px;
+	color: $global-color_disselect +50%;
+	transition: all .2s;
+	padding-top: 70px;
+	font-size: $global-font-size;
+	font-weight: bold;
+}
+.vertical_settings .tabs-title:last-of-type {
+	padding-bottom: 15px;
+}
+a i {
+	font-style: normal;
+	font-weight: normal;
+}
+.vertical_settings .tabs-title:hover a,
+.vertical_settings .tabs-title [aria-selected='true'] {
+	border-left: 4px solid $global-color_red;
+	background: none;
+	color: $white;
+}
+
+.vertical_settings .tabs-title [aria-selected='true'] i:before {
+	color: $global-color_red;
+}
+
+
+

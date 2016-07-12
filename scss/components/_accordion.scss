@@ -1,0 +1,255 @@
+.dashboard-accordion .accordion-title,
+.accordion-top {
+		color: $black;
+		padding-top: 35px;
+		padding-bottom: 35px;
+		font-size: $global-font-size *1.2;
+		padding-left: $padding-left-accordion;
+	}
+.accordion-title:hover,
+.is-active > .accordion-title {
+	background: none;
+}
+.accordion-top {
+	border: 1px solid $light-gray;
+	border-bottom: none;
+	padding-bottom: 15px;
+}
+.dashboard-accordion .accordion-title > span:before {
+	content: '23%';
+	font-size: $global-font-size *1.2;
+	top: 30px;
+	right: 86%;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: $global-border-radiusAcordion;
+}
+.dashboard-accordion .accordion-item:nth-of-type(2) a > span:before {
+	content: '87%';
+}
+.dashboard-accordion .accordion-item:nth-of-type(3) a > span:before {
+	content: '83%';
+}
+.dashboard-accordion .accordion-item:nth-of-type(4) a > span:before {
+	content: '23%';
+}
+.dashboard-accordion .accordion-item:nth-of-type(5) a > span:before {
+	content: '98%';
+}
+.dashboard-accordion .accordion-item:nth-of-type(6) a > span:before {
+	content: '98%';
+}
+.dashboard-accordion .accordion-item:last-of-type a > span:before {
+	content: '98%';
+}
+.accordion-top {
+	padding-left: 40px;
+}
+[type='text'],
+[type='text']:focus {
+	border: none;
+	box-shadow: none;
+	color: $global-color_disselect;
+}
+.accordion-top .select--tabs:after {
+	display: none;
+}
+.select--tabs + a,
+.accordion_text {
+	position: relative;
+}
+.select--tabs + a > span:before {
+	content: $icon-plus;
+	font-family: $global-font-icon;
+	position: absolute;
+	top: -55px;
+	right: -260px;
+	width: $circle-height;
+	height: $circle-height;
+	text-align: center;
+	line-height: $circle-height;
+	color: $white;
+    font-size: 10px;
+	background: $global-color_red;
+	border-radius: $global-border-radiusSpan;
+}
+.accordion-top .select--tabs:before {
+	right: 25%;
+}
+.accordion-top select {
+	font-size: 14px;
+	text-transform: none;
+	font-weight: bold;
+	text-indent: 10px;
+	width: 80%;
+}
+.accordion-item_title,
+.accordion_data {
+	position: absolute;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	color: $black;
+	height: $line-height;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: $line-height;
+	text-align: center;
+	border: 1px solid $medium-gray;
+	border-radius: $global-border-radiusSpan;
+	right: 5.5rem;
+	top: 50%;
+	margin-top: -1.5rem;
+}
+.fixed--arrow:after,
+.fixed--arrow:before,
+.accordion_text:after  {
+	font-family: $global-font-icon;
+	position: absolute;
+	width: $line-height;
+	height: $line-height;
+	text-align: center;
+	line-height: $line-height;
+	color: $dark-gray;
+    font-size: 16px;
+	background: transparent;
+	border: 1px solid $medium-gray;
+	border-radius: $global-border-radiusSpan;
+	top: 50%;
+	margin-top: -1.5rem;
+	transition: transform 1s;
+}
+.fixed--arrow:before {
+	content: $icon-arrow;
+}
+.is-active>.fixed--arrow::before {
+	content: $icon-arrow;
+	transform: rotate(180deg);
+
+}
+.fixed--arrow:after {
+	content: $icon-zoom;
+	right: 3.4rem;
+}
+.accordion_text:after {
+	content: $icon-zoom;
+	right: 1rem;
+	margin-top: 0;
+}
+.fixed--arrow:hover:after {
+	color: $white;
+	background: $global-color_red;
+	transform: rotate(360deg);
+}
+.accordion-item_title:before {
+	display: none;
+}
+.accordion-content_create {
+	border-bottom: 1px solid $medium-gray;
+}
+.accordion-content_create,
+.accordion-content_ready {
+	position: relative;
+	background: $light-gray;
+	color: $black;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-size: $global-font-size *1;
+	padding-left: $padding-left-accordion;
+}
+
+.content-create_span:before,
+.content-ready_span:before {
+	content: '66%';
+	position: absolute;
+	font-size: $global-font-size *1.2;
+	top: 30px;
+	right: 86%;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid $medium-gray;
+	color: $medium-gray;
+	border-radius: $global-border-radiusAcordion;
+}
+.content-ready_span:before {
+	font-size: $global-font-size *.9;
+	content: 'ready';
+}
+.content-ready_span {
+	text-decoration: line-through;
+	color: $medium-gray;
+}
+.content-ready_span:after {
+	position: absolute;
+	// content: $icon-checking;
+	font-family: $global-font-icon;
+	text-decoration: none;
+}
+.accordion_data {
+	position: static;
+	float: right;
+	font-weight: normal;
+	margin-right: 3.4rem;
+	margin-left: 10px;
+	padding-left: 40px;
+	margin-top: 0;
+}
+.accordion_data:before {
+	position: absolute;
+	margin-left: -20px;
+	content: $icon-reload2;
+	font-family: $global-font-icon;
+	color: $dark-gray;
+	transition: all .5s;
+}
+.accordion_data:hover:before {
+	transform: rotate(360deg);
+	color: $global-color_red;
+}
+
+.accordion-create_user,
+.accordion-ready_user {
+	position: relative;
+	float: right;
+	display: block;
+	width: $line-height;
+	height: $line-height;
+	margin-left: 5px;
+	border: 1px solid $medium-gray;
+	border-radius: $global-border-radiusSpan;
+}
+.accordion-create_user:last-of-type {
+	background: url(../img/chat-1.jpg) 50% 15% no-repeat;
+}
+.accordion-create_user:nth-of-type(3),
+.accordion-ready_user:last-of-type {
+	background: url(../img/chat-2.jpg) 60% 5% no-repeat;
+}
+.accordion-create_user:nth-of-type(2),
+ .accordion-ready_user:first-of-type {
+	background: url(../img/chat-3.jpg) 55% 2% no-repeat;
+}
+.user--plus {
+	text-align: center;
+	line-height: $line-height;
+	color: $dark-gray;
+    font-size: 12px;
+}
+.accordion-create_user:before,
+.accordion-ready_user:before {
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	left:-2px;
+	border: 2px solid $light-gray;
+	border-radius: 50%;
+}
+.status--online:before {
+	background: $color-online;
+	content: '';
+}
+.status--offline:before {
+	background: $color-offline;
+	content: '';
+}
