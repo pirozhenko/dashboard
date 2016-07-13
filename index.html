@@ -9,30 +9,26 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <div class="row collapse">
+    <div class="row collapse"><!-- main row -->
 
-      <div class="small-1 columns">
-
+      <div class="small-1 columns"><!-- vertical tabs -->
         <ul class="tabs vertical vertical_settings" id="example-vert-tabs" data-tabs>
-
           <li class="tabs-logo">
               <a href="#">
                   <span >2</span>
               </a>
           </li>
           <li class="tabs-title is-active icon -points">
-              <a href="#panel1v" aria-selected="true">Board 
+              <a href="#panel1v" aria-selected="true">Board
                   <i class='icon -dashboard'></i>
               </a>
           </li>
-
           <li class="tabs-title icon -points">
-              <a href="#panel2v">Projects 
+              <a href="#panel2v">Projects
                   <i class='icon -menu'></i>
                   <span>9</span>
               </a>
           </li>
-
           <li class="tabs-title icon -points settings--height">
               <a href="#panel3v">Settings 
                   <i class='icon -sheeel'></i>
@@ -51,11 +47,12 @@
               </a>
           </li>
         </ul>
-      </div>
-      <div class="small-11 columns">
+      </div><!-- end vertical tabs -->
+
+      <div class="small-11 columns"><!-- content of tabs -->
         <div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
           <div class="tabs-panel pad--zero is-active" id="panel1v">
-            <div class="tabs-panel_header clearfix">
+            <div class="tabs-panel_header clearfix"><!-- header of first tab 'board' -->
               <a href="#" class="tabs-panel_title">Dashboard
                 <span class='icon -reload tabs-panel_reload'></span>
               </a>
@@ -73,8 +70,8 @@
                       <option value="Yura">Yura</option>
                   </select>
               </div>
-            </div>
-            <ul class="tabs horizotal--tabs" data-tabs id="example-tabs">
+            </div><!-- end header of first tab 'board' -->
+            <ul class="tabs horizotal--tabs" data-tabs id="example-tabs"><!-- horizontal tabs -->
                 <li class="tabs-title is-active">
                     <a href="#panel1" class='horizontal-tabs_item' aria-selected="true">Active Projects
                         <i class='icon -time'></i>
@@ -90,7 +87,7 @@
                 <li class="tabs-title">
                     <a href="#panel3" class='horizontal-tabs_item'>Search Project, User, Task, etc...</a>
                 </li>
-            </ul>
+            </ul><!-- end horizontal tabs -->
             <div class="tabs-content tabs-content_fixpadding" data-tabs-content="example-tabs">
                 <div class="tabs-panel is-active" id="panel1">
                   <div class="row collapse">
@@ -336,68 +333,73 @@
                     </div>
 
                     <div class="small-4 columns">
+
+
                          <ul class="list-users">
-                           <li>
-                              <a href="#" class="list-user_item">
-                                  <strong class='list-users_name'>Mark P.</strong>add an image into Worlda
-                              </a>
-                              <div class="list-user_data">today, 10:30PM</div>
+                           <li class='list-user_info'>
+                              <p class="list-user_item">
+                                  <strong class='list-users_name'>Mark P.</strong>add an image into Worlda <br>
+                              <span class="list-user_data">today, 10:30PM</span>
+                              </p>
                           </li>
-                           <li>
-                              <a href="#" class="list-user_item">
-                                  <strong class='list-users_name'>Marvin S.</strong>add an image into Worlda
-                              </a>
-                              <div class="list-user_data">today, 10:30PM</div>
+                           <li class='list-user_info'>
+                              <p class="list-user_item">
+                                  <strong class='list-users_name'>Marvin S.</strong>add an image into Worlda <br>
+                              <span class="list-user_data">today, 10:30PM</span>
+                              </p>
                           </li>
-                           <li>
-                              <a href="#" class="list-user_item">
-                                  <strong class='list-users_name'>Sebastian K.</strong>add an image into Worlda
-                              </a>
-                              <div class="list-user_data">today, 10:30PM</div>
+                           <li class='list-user_info'>
+                              <p class="list-user_item">
+                                  <strong class='list-users_name'>Sebastian K.</strong>add an image into Worlda <br>
+                              <span class="list-user_data">today, 10:30PM</span>
+                              </p>
                           </li>
-                           <li>
-                              <a href="#" class="list-user_item">
-                                  <strong class='list-users_name'>Mark P.</strong>add an image into Worlda
-                              </a>
-                              <div class="list-user_data">today, 10:30PM</div>
+                           <li class='list-user_info'>
+                              <p class="list-user_item">
+                                  <strong class='list-users_name'>Mark P.</strong>add an image into Worlda <br>
+                              <span class="list-user_data">today, 10:30PM</span>
+                              </p>
                           </li>
-                           <li>
-                              <a href="#" class="list-user_item">
-                                  <strong class='list-users_name'>Philip O.</strong>add an image into Worlda
-                              </a>
-                              <div class="list-user_data">today, 10:30PM</div>
+                           <li class='list-user_info'>
+                              <p class="list-user_item">
+                                  <strong class='list-users_name'>Philip O.</strong>add an image into Worlda <br>
+                              <span class="list-user_data">today, 10:30PM</span>
+                              </p>
                           </li>
-                           <li>
-                              <a href="#" class="list-user_item">
-                                  <strong class='list-users_name'>Mark P.</strong>add an image into Worlda
-                              </a>
-                              <div class="list-user_data">today, 10:30PM</div>
+                           <li class='list-user_info'>
+                              <p class="list-user_item">
+                                  <strong class='list-users_name'>Mark P.</strong>add an image into Worlda <br>
+                              <span class="list-user_data">today, 10:30PM</span>
+                              </p>
                           </li>
-                           <li>
-                              <a href="#" class="list-user_item">
-                                  <strong class='list-users_name'>Benni I.</strong>add an image into Worlda
-                              </a>
-                              <div class="list-user_data">today, 10:30PM</div>
+                           <li class='list-user_info'>
+                              <p class="list-user_item">
+                                  <strong class='list-users_name'>Benni I.</strong>add an image into Worlda <br>
+                              <span class="list-user_data">today, 10:30PM</span>
+                              </p>
                           </li>
-                           <li>
-                              <a href="#" class="list-user_item">
-                                  <strong class='list-users_name'>Benni I.</strong>add an image into Worlda
-                              </a>
-                              <div class="list-user_data">today, 10:30PM</div>
+                           <li class='list-user_info'>
+                              <p class="list-user_item">
+                                  <strong class='list-users_name'>Benni I.</strong>add an image into Worlda <br>
+                              <span class="list-user_data">today, 10:30PM</span>
+                              </p>
                           </li>
-                           <li>
-                              <a href="#" class="list-user_item">
-                                  <strong class='list-users_name'>Benni I</strong>add an image into Worlda
-                              </a>
-                              <div class="list-user_data">today, 10:30PM</div>
+                           <li class='list-user_info'>
+                              <p class="list-user_item">
+                                  <strong class='list-users_name'>Benni I</strong>add an image into Worlda <br>
+                              <span class="list-user_data">today, 10:30PM</span>
+                              </p>
                           </li>
-                           <li>
-                              <a href="#" class="list-user_item">
-                                  <strong class='list-users_name'>Benni I</strong>add an image into Worlda
-                              </a>
-                              <div class="list-user_data">today, 10:30PM</div>
+                           <li class='list-user_info'>
+                              <p class="list-user_item">
+                                  <strong class='list-users_name'>Benni I</strong>add an image into Worlda <br>
+                              <span class="list-user_data">today, 10:30PM</span>
+                              </p>
                           </li>
-                         </ul>
+                        </ul>
+                        <div class="accordion-bottom"><a href="#" class='accordion-bottom_archiv'>Project Archiv</a></div>
+
+
                     </div>
                   </div>
                 </div>
@@ -408,7 +410,7 @@
           </div>
           <div class="tabs-panel" id="panel2v">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <h1>This is a panel TWO</h1>
+            <h1>This is p panel TWO</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ducimus praesentium harum sit nemo quos enim dolorum molestias beatae magnam delectus, tenetur autem! Esse nam, quibusdam animi similique, nesciunt odit.</p>
           </div>
 
@@ -430,7 +432,7 @@
           </div>
 
         </div>
-      </div>
+      </div><!--end content of tabs -->
     </div>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>

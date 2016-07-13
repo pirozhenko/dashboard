@@ -245,20 +245,18 @@
 	background: $color-offline;
 	content: '';
 }
-
-
-
-
-
-
 .accordion-bottom {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	padding-left: 30px;
-	font-size: 1;
+	border: 1px solid #ccc;
+	margin-top: -15px;
+
 }
 .accordion-bottom_archiv {
 	position: relative;
+	color: #000;
+	border-radius: 0 0 2px 2px;
 }
 .accordion-bottom_archiv:before {
 	content: $icon-arrow;
@@ -268,21 +266,4 @@
 	top: -5px;
 	font-size: 18px;
 	transform: rotate(270deg);
-}
-
-
-
-
-
-
-
-
-
-
-.list-user_item {
-	color: $black;
-	padding-top: 35px;
-	padding-bottom: 35px;
-	font-size: $global-font-size *0.9;
-	padding-left: $padding-left-accordion;
 }
