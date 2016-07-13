@@ -1,6 +1,7 @@
 .tabs-content_fixpadding {
 	padding: 15px;
 }
+
 .dashboard-accordion .accordion-title {
 	color: $black;
 	padding-top: 35px;
@@ -8,14 +9,17 @@
 	font-size: $global-font-size *1.4;
 	padding-left: $padding-left-accordion;
 }
+
 .accordion-title:hover,
 .is-active > .accordion-title {
 	background: none;
 }
+
 .accordion-title:last-of-type,
 .accordion-top {
 	border-radius: 5px 5px 0 0;
 }
+
 .accordion-top {
 	border: 1px solid $light-gray;
 	border-bottom: none;
@@ -23,19 +27,23 @@
 	padding-bottom: 10px;
 	padding-left: 20px;
 }
+
 [type='text'],
 [type='text']:focus {
 	border: none;
 	box-shadow: none;
 	color: $global-color_disselect;
 }
+
 .accordion-top .select--tabs:after {
 	display: none;
 }
+
 .accordion-top .select--tabs {
 	padding-right: 20px;
 }
-.accordion-top .select--tabs .select-tabs_plus {
+
+.select-tabs_plus {
 	content: $icon-plus;
 	font-family: $global-font-icon;
 	position: absolute;
@@ -49,17 +57,21 @@
 	background: $global-color_red;
 	border-radius: $global-border-radiusSpan;
 }
-.accordion-top .select--tabs .select-tabs_plus:before {
+
+.select-tabs_plus:before {
 	top: 0;
 	left: 25%;
 	font-size: 18px;
 }
+
 .accordion-top .select--tabs {
 	margin-right: 45px;
 }
+
 .accordion-top .select--tabs:before {
 	right: 15%;
 }
+
 .accordion-top select {
 	font-size: 14px;
 	text-transform: none;
@@ -95,9 +107,11 @@
 	top: 50%;
 	margin-top: -1.5rem;
 }
+
 .accordion-item_title {
 	background: transparent;
 }
+
 .fixed--arrow:after,
 .fixed--arrow:before,
 .accordion_text:after  {
@@ -116,34 +130,42 @@
 	margin-top: -1.5rem;
 	transition: transform 1s;
 }
+
 .fixed--arrow:before {
 	content: $icon-arrow;
 }
+
 .is-active>.fixed--arrow::before {
 	content: $icon-arrow;
 	transform: rotate(180deg);
 
 }
+
 .fixed--arrow:after {
 	content: $icon-zoom;
 	right: 3.4rem;
 }
+
 .accordion_text:after {
 	content: $icon-zoom;
 	right: 1rem;
 	margin-top: -15px;
 }
+
 .fixed--arrow:hover:after {
 	color: $white;
 	background: $global-color_red;
 	transform: rotate(360deg);
 }
+
 .accordion-item_title:before {
 	display: none;
 }
+
 .accordion-content_create {
 	border-bottom: 1px solid $medium-gray;
 }
+
 .accordion-content_create,
 .accordion-content_ready {
 	position: relative;
@@ -165,19 +187,23 @@
 	border-radius: $global-border-radiusAcordion;
 	margin-right: 15px;
 }
+
 .content-ready_span {
 	font-size: $global-font-size *.9;
 }
+
 .content-ready_text {
 	text-decoration: line-through;
 	color: $medium-gray;
 }
+
 // .content-ready_text:after {
 // 	position: absolute;
 // 	content: $icon-checking;
 // 	font-family: $global-font-icon;
 // 	text-decoration: none;
 // }
+
 .accordion_data {
 	position: static;
 	float: right;
@@ -187,6 +213,7 @@
 	padding-left: 40px;
 	margin-top: 0;
 }
+
 .accordion_data:before {
 	position: absolute;
 	margin-left: -20px;
@@ -195,10 +222,12 @@
 	color: $dark-gray;
 	transition: all .5s;
 }
+
 .accordion_data:hover:before {
 	transform: rotate(360deg);
 	color: $global-color_red;
 }
+
 
 .accordion-create_user,
 .accordion-ready_user {
@@ -211,23 +240,28 @@
 	border: 1px solid $medium-gray;
 	border-radius: $global-border-radiusSpan;
 }
+
 .accordion-create_user:last-of-type {
 	background: url(../img/chat-1.jpg) 50% 15% no-repeat;
 }
+
 .accordion-create_user:nth-of-type(3),
 .accordion-ready_user:last-of-type {
 	background: url(../img/chat-2.jpg) 60% 5% no-repeat;
 }
+
 .accordion-create_user:nth-of-type(2),
  .accordion-ready_user:first-of-type {
 	background: url(../img/chat-3.jpg) 55% 2% no-repeat;
 }
+
 .user--plus {
 	text-align: center;
 	line-height: $line-height;
 	color: $dark-gray;
     font-size: 12px;
 }
+
 .accordion-create_user:before,
 .accordion-ready_user:before {
 	position: absolute;
@@ -237,14 +271,17 @@
 	border: 2px solid $light-gray;
 	border-radius: 50%;
 }
+
 .status--online:before {
 	background: $color-online;
 	content: '';
 }
+
 .status--offline:before {
 	background: $color-offline;
 	content: '';
 }
+
 .accordion-bottom {
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -253,11 +290,13 @@
 	margin-top: -15px;
 
 }
+
 .accordion-bottom_archiv {
 	position: relative;
 	color: #000;
 	border-radius: 0 0 2px 2px;
 }
+
 .accordion-bottom_archiv:before {
 	content: $icon-arrow;
 	font-family:$global-font-icon;

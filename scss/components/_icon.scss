@@ -12,14 +12,11 @@
     &:hover:before {
     color: $global-color_red;
 }
-
   &.-arrow {
     &:before {
       content: $icon-arrow;
       font-size: 20px;
       color: $white;
-
-
     }
   }
   &.-atom {

@@ -1,12 +1,15 @@
 body {
 	font-family: 'Roboto', sans-serif;
 }
+
 .pad--zero {
 	padding: 0;
 }
+
 .fix--width {
 	width: calc(83.33333% + 4.2rem );
 }
+
 .set--width_minus {
 	width: ($global-width / 6) - 4.2rem;
 }
