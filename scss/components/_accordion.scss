@@ -1,49 +1,27 @@
-.dashboard-accordion .accordion-title,
-.accordion-top {
-		color: $black;
-		padding-top: 35px;
-		padding-bottom: 35px;
-		font-size: $global-font-size *1.2;
-		padding-left: $padding-left-accordion;
-	}
+.tabs-content_fixpadding {
+	padding: 15px;
+}
+.dashboard-accordion .accordion-title {
+	color: $black;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	font-size: $global-font-size *1.4;
+	padding-left: $padding-left-accordion;
+}
 .accordion-title:hover,
 .is-active > .accordion-title {
 	background: none;
 }
+.accordion-title:last-of-type,
+.accordion-top {
+	border-radius: 5px 5px 0 0;
+}
 .accordion-top {
 	border: 1px solid $light-gray;
 	border-bottom: none;
-	padding-bottom: 15px;
-}
-.dashboard-accordion .accordion-title > span:before {
-	content: '23%';
-	font-size: $global-font-size *1.2;
-	top: 30px;
-	right: 86%;
-	padding-left: 5px;
-	padding-right: 5px;
-	border-radius: $global-border-radiusAcordion;
-}
-.dashboard-accordion .accordion-item:nth-of-type(2) a > span:before {
-	content: '87%';
-}
-.dashboard-accordion .accordion-item:nth-of-type(3) a > span:before {
-	content: '83%';
-}
-.dashboard-accordion .accordion-item:nth-of-type(4) a > span:before {
-	content: '23%';
-}
-.dashboard-accordion .accordion-item:nth-of-type(5) a > span:before {
-	content: '98%';
-}
-.dashboard-accordion .accordion-item:nth-of-type(6) a > span:before {
-	content: '98%';
-}
-.dashboard-accordion .accordion-item:last-of-type a > span:before {
-	content: '98%';
-}
-.accordion-top {
-	padding-left: 40px;
+	padding-top: 25px;
+	padding-bottom: 10px;
+	padding-left: 20px;
 }
 [type='text'],
 [type='text']:focus {
@@ -54,39 +32,54 @@
 .accordion-top .select--tabs:after {
 	display: none;
 }
-.select--tabs + a,
-.accordion_text {
-	position: relative;
+.accordion-top .select--tabs {
+	padding-right: 20px;
 }
-.select--tabs + a > span:before {
+.accordion-top .select--tabs .select-tabs_plus {
 	content: $icon-plus;
 	font-family: $global-font-icon;
 	position: absolute;
-	top: -55px;
-	right: -260px;
+	top: 0;
+	right: -35px;
 	width: $circle-height;
 	height: $circle-height;
 	text-align: center;
 	line-height: $circle-height;
 	color: $white;
-    font-size: 10px;
 	background: $global-color_red;
 	border-radius: $global-border-radiusSpan;
 }
+.accordion-top .select--tabs .select-tabs_plus:before {
+	top: 0;
+	left: 25%;
+	font-size: 18px;
+}
+.accordion-top .select--tabs {
+	margin-right: 45px;
+}
 .accordion-top .select--tabs:before {
-	right: 25%;
+	right: 15%;
 }
 .accordion-top select {
 	font-size: 14px;
 	text-transform: none;
-	font-weight: bold;
-	text-indent: 10px;
-	width: 80%;
+	padding-left: 15px;
+	padding-right: 30px;
+	position: relative;
+	cursor: pointer;
 }
+
+.accordion-title > .accordion-item_percent {
+	font-size: $global-font-size *1.2;
+	top: 30px;
+	left: 25px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: $global-border-radiusAcordion;
+}
+
 .accordion-item_title,
 .accordion_data {
-	position: absolute;
-	display: inline-block;
 	text-transform: uppercase;
 	font-size: 12px;
 	font-weight: bold;
@@ -101,6 +94,9 @@
 	right: 5.5rem;
 	top: 50%;
 	margin-top: -1.5rem;
+}
+.accordion-item_title {
+	background: transparent;
 }
 .fixed--arrow:after,
 .fixed--arrow:before,
@@ -135,7 +131,7 @@
 .accordion_text:after {
 	content: $icon-zoom;
 	right: 1rem;
-	margin-top: 0;
+	margin-top: -15px;
 }
 .fixed--arrow:hover:after {
 	color: $white;
@@ -151,41 +147,37 @@
 .accordion-content_create,
 .accordion-content_ready {
 	position: relative;
-	background: $light-gray;
+	background: url(../img/bg-sub.jpg);
 	color: $black;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	font-size: $global-font-size *1;
-	padding-left: $padding-left-accordion;
+	padding-left: 40px;
 }
 
-.content-create_span:before,
-.content-ready_span:before {
-	content: '66%';
-	position: absolute;
+.content-create_span,
+.content-ready_span{
 	font-size: $global-font-size *1.2;
-	top: 30px;
-	right: 86%;
 	padding-left: 5px;
 	padding-right: 5px;
 	border: 1px solid $medium-gray;
 	color: $medium-gray;
 	border-radius: $global-border-radiusAcordion;
-}
-.content-ready_span:before {
-	font-size: $global-font-size *.9;
-	content: 'ready';
+	margin-right: 15px;
 }
 .content-ready_span {
+	font-size: $global-font-size *.9;
+}
+.content-ready_text {
 	text-decoration: line-through;
 	color: $medium-gray;
 }
-.content-ready_span:after {
-	position: absolute;
-	// content: $icon-checking;
-	font-family: $global-font-icon;
-	text-decoration: none;
-}
+// .content-ready_text:after {
+// 	position: absolute;
+// 	content: $icon-checking;
+// 	font-family: $global-font-icon;
+// 	text-decoration: none;
+// }
 .accordion_data {
 	position: static;
 	float: right;
@@ -252,4 +244,45 @@
 .status--offline:before {
 	background: $color-offline;
 	content: '';
+}
+
+
+
+
+
+
+.accordion-bottom {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 30px;
+	font-size: 1;
+}
+.accordion-bottom_archiv {
+	position: relative;
+}
+.accordion-bottom_archiv:before {
+	content: $icon-arrow;
+	font-family:$global-font-icon;
+	position: absolute;
+	left: 100%;
+	top: -5px;
+	font-size: 18px;
+	transform: rotate(270deg);
+}
+
+
+
+
+
+
+
+
+
+
+.list-user_item {
+	color: $black;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	font-size: $global-font-size *0.9;
+	padding-left: $padding-left-accordion;
 }

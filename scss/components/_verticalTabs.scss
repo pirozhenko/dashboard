@@ -1,6 +1,4 @@
-.set--width_minus {
-	width: ($global-width / 6) - 4.2rem;
-}
+
 .vertical_settings {
 	background: url(../img/bg.gif) repeat-y;
 	text-align: center;
@@ -12,7 +10,7 @@
 .settings--height {
 	height: 480px;
 }
-.tabs-logo span {
+.tabs-logo a  {
 	position: absolute;
 	display: block;
 	top: 25px;
@@ -25,12 +23,10 @@
 .tabs-title {
 	position: relative;
 }
-[href^="#"] span:before,
-.tabs-logo span:before {
-	content: '2';
+a span,
+.tabs-logo span {
 	position: absolute;
 	top: -5px;
-	right: 5px;
 	height: $line-height;
 	text-align: center;
 	padding-left: 10px;
@@ -40,14 +36,12 @@
 	background: $global-color_red;
 	border-radius: $global-border-radiusSpan;
 }
-.-menu + span:before {
-	content: '9';
+.-menu + span {
 	top: 0;
 	right: 20px;
 	background: $dark-gray + 40%;
 }
-.-atom + span:before {
-	content: '3';
+.-atom + span {
 	top: 0;
 	right: 20px;
 }
@@ -65,7 +59,7 @@
 .vertical_settings .tabs-title:last-of-type {
 	padding-bottom: 15px;
 }
-a i {
+[href^="#"] i {
 	font-style: normal;
 	font-weight: normal;
 }

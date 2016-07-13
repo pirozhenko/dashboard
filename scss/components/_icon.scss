@@ -1,6 +1,6 @@
 .icon {
   font-family: $global-font-icon;
-  position: relative;
+  position: absolute;
     &:before {
       font-size: $global-font-size * 3.2;
       position: absolute;

@@ -1,4 +1,7 @@
-.horizotal--tabs a{
+.horizotal--tabs {
+	background: #f1f1f1;
+}
+.horizotal--tabs .horizontal-tabs_item {
 	position: relative;
 	height: $circle-height * 2;
 	line-height: $circle-height;
@@ -8,29 +11,31 @@
 	color: $black;
 	border-right: 1px solid #ccc;
 }
-.horizotal--tabs i:before {
+.horizontal-tabs_item .icon:before {
 	top: -35px;
 }
-.horizotal--tabs {
+.tabs-title>a[aria-selected='true'] {
+	background: #fff;
+}
+.horizontal-tabs_item:hover {
 	background: #f1f1f1;
 }
-.horizotal--tabs a[aria-selected='true'] {
-	background: $white;
-}
-.horizotal--tabs a {
+.horizontal-tabs_item  {
 	background: #f8f8f8;
 }
-.-time + span:before {
-	content: '9';
+.-time + span {
 	background: $dark-gray + 40%;
 }
-.horizotal--tabs span:before {
+.horizotal--tabs span {
 	top: 15px;
 	right: 35px;
 }
-.horizotal--tabs .tabs-title:last-of-type a {
-	color: $light-gray;
-	border: none;
+.tabs-title:last-of-type {
+	float: right;
+}
+.tabs-title:last-of-type .horizontal-tabs_item {
+	color: #ccc;
+	background: #f1f1f1;
 	text-align: right;
-	margin-left: 0;
+	border-right: none;
 }

@@ -11,11 +11,15 @@
   <body>
     <div class="row collapse">
 
-      <div class="small-2 set--width_minus columns">
+      <div class="small-1 columns">
 
         <ul class="tabs vertical vertical_settings" id="example-vert-tabs" data-tabs>
 
-          <li class="tabs-logo"><span></span></li>
+          <li class="tabs-logo">
+              <a href="#">
+                  <span >2</span>
+              </a>
+          </li>
           <li class="tabs-title is-active icon -points">
               <a href="#panel1v" aria-selected="true">Board 
                   <i class='icon -dashboard'></i>
@@ -25,7 +29,7 @@
           <li class="tabs-title icon -points">
               <a href="#panel2v">Projects 
                   <i class='icon -menu'></i>
-                  <span></span>
+                  <span>9</span>
               </a>
           </li>
 
@@ -38,7 +42,7 @@
           <li class="tabs-title">
               <a href="#panel4v">Upgrade 
                   <i class='icon -atom'></i>
-                  <span></span>
+                  <span>3</span>
               </a>
           </li>
           <li class="tabs-title icon -points">
@@ -48,80 +52,84 @@
           </li>
         </ul>
       </div>
-      <div class="small-10 fix--width columns">
+      <div class="small-11 columns">
         <div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
           <div class="tabs-panel pad--zero is-active" id="panel1v">
             <div class="tabs-panel_header clearfix">
               <a href="#" class="tabs-panel_title">Dashboard
-                <span class='icon -reload'></span>
+                <span class='icon -reload tabs-panel_reload'></span>
               </a>
 
-              <div class='small-3 float-right'>
-                <a href="">
-                  <span class='icon -arrow color--green'></span>
+              <div class='select--tabs float-right'>
+                <a href="#" class="" >
+                  <span class='icon -arrow color--green select-tabs_arrow'></span>
                 </a>
-                <div  class='select--tabs'>
                   <select name="" id="">
-                      <option value="default">5 users online</option>
+                      <option value="default">5 user online</option>
                       <option value="Nick">Nick</option>
                       <option value="Olga">Olga</option>
                       <option value="Arsen">Arsen</option>
                       <option value="Marina">Marina</option>
                       <option value="Yura">Yura</option>
                   </select>
-                </div>
               </div>
             </div>
             <ul class="tabs horizotal--tabs" data-tabs id="example-tabs">
                 <li class="tabs-title is-active">
-                    <a href="#panel1" aria-selected="true">Active Projects
+                    <a href="#panel1" class='horizontal-tabs_item' aria-selected="true">Active Projects
                         <i class='icon -time'></i>
-                        <span></span>
+                        <span>9</span>
                     </a>
                 </li>
                 <li class="tabs-title">
-                    <a href="#panel2">Messanger
+                    <a href="#panel2" class='horizontal-tabs_item'>Messanger
                         <i class='icon -plain'></i>
-                        <span></span>
+                        <span>2</span>
                     </a>
                 </li>
                 <li class="tabs-title">
-                    <a href="#panel3">Search Project, User, Task, etc...</a>
+                    <a href="#panel3" class='horizontal-tabs_item'>Search Project, User, Task, etc...</a>
                 </li>
             </ul>
-            <div class="tabs-content" data-tabs-content="example-tabs">
+            <div class="tabs-content tabs-content_fixpadding" data-tabs-content="example-tabs">
                 <div class="tabs-panel is-active" id="panel1">
                   <div class="row collapse">
                     <div class="small-8 columns">
+                      
+                      <div class='accordion-top'>
+                        <div class='row collapse'>
+                             <div class='small-7 columns'>
+                               <input type="text" placeholder="Search a Project with Name, Task, User...">
+                             </div>
+                             
+                               <div class='select--tabs float-right'>
+                                  <a href="#" class="" >
+                                      <span class='icon -plus select-tabs_plus'></span>
+                                  </a>
+                                  <select name="" id="">
+                                     <option default="new">New Project(descending)</option>
+                                     <option value="old">Old Project(accending)</option>
+                                     <option value="Vanya">Vanya's Project</option>
+                                     <option value="Marina">Marina's Project</option>
+                                 </select>
+
+                               </div>
+                             
+                        </div>
+                      </div>
 
                       <ul class="accordion dashboard-accordion" data-accordion role="tablist">
-                          <div class='accordion-top'>
-                            <div class='row collapse'>
-                                 <div class='small-6 columns'>
-                                   <input type="text" placeholder="Search a Project with Name, Task, User...">
-                                 </div>
-                                 <div class='small-5 columns'>
-                                   <div class='select--tabs'>
-                                      <select name="" id="">
-                                         <option default="new">New Project(descending)</option>
-                                         <option value="old">Old Project(accending)</option>
-                                         <option value="Vanya">Vanya's Project</option>
-                                         <option value="Marina">Marina's Project</option>
-                                     </select>
-                                   </div>
-                                   <a href=""><span></span></a>
-                                 </div>
-                            </div>
-                          </div>
+
                           <li class="accordion-item">
                               <a href="#panel1d" role="tab" class="accordion-title fixed--arrow" id="panel1d-heading" aria-controls="panel1d">
-                                  <span></span>
+                                  <span class='accordion-item_percent'>23%</span>
                                   Create Contact Formular
                                   <span class='accordion-item_title'>worlda</span>
                               </a>
                               <div id="panel1d" class="accordion-content pad--zero" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
                                   <div class="accordion-content_create clearfix">
-                                      <span class='content-create_span float-left'>Creating Context</span>
+                                      <span class='content-create_span float-left'>66%</span>
+                                      <div class='content-create_text float-left'>Creating Context</div>
                                       <div class="accordion_text">
                                           <a href="" class='accordion_data'>today,13:40pm</a>
                                           <span class='accordion-create_user user--plus'>+3</span>
@@ -131,7 +139,8 @@
                                       </div>
                                   </div>
                                   <div class="accordion-content_ready clearfix">
-                                      <span class='content-ready_span float-left'>Implementation in the Layout</span>
+                                      <span class='content-ready_span float-left'>ready</span>
+                                      <div class='content-ready_text float-left'>Implementation in the Layout</div>
                                       <div class="accordion_text">
                                           <a href="" class='accordion_data'>yesterday,12:40pm</a>
                                           <span class='accordion-ready_user status--offline'></span>
@@ -143,13 +152,14 @@
 
                           <li class="accordion-item">
                               <a href="#panel1d" role="tab" class="accordion-title fixed--arrow" id="panel1d-heading" aria-controls="panel1d">
-                                  <span></span>
+                                  <span class='accordion-item_percent'>87%</span>
                                   Create Subpage PSD
                                   <span class='accordion-item_title'>panorama</span>
                               </a>
                               <div id="panel1d" class="accordion-content pad--zero" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
                                   <div class="accordion-content_create clearfix">
-                                      <span class='content-create_span float-left'>Creating Context</span>
+                                      <span class='content-create_span float-left'>66%</span>
+                                      <div class='content-create_text float-left'>Creating Context</div>
                                       <div class="accordion_text">
                                           <a href="" class='accordion_data'>today,13:40pm</a>
                                           <span class='accordion-create_user user--plus'>+3</span>
@@ -159,7 +169,8 @@
                                       </div>
                                   </div>
                                   <div class="accordion-content_ready clearfix">
-                                      <span class='content-ready_span float-left'>Implementation in the Layout</span>
+                                      <span class='content-ready_span float-left'>ready</span>
+                                      <div class='content-ready_text float-left'>Implementation in the Layout</div>
                                       <div class="accordion_text">
                                           <a href="" class='accordion_data'>yesterday,12:40pm</a>
                                           <span class='accordion-ready_user status--offline'></span>
@@ -170,13 +181,14 @@
                           </li>
                           <li class="accordion-item">
                               <a href="#panel1d" role="tab" class="accordion-title fixed--arrow" id="panel1d-heading" aria-controls="panel1d">
-                                  <span></span>
+                                  <span class='accordion-item_percent'>83%</span>
                                   Layout & implementation in HTML & CSS
                                   <span class='accordion-item_title'>ebay relaunch</span>
                               </a>
                               <div id="panel1d" class="accordion-content pad--zero" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
                                   <div class="accordion-content_create clearfix">
-                                      <span class='content-create_span float-left'>Creating Context</span>
+                                      <span class='content-create_span float-left'>66%</span>
+                                      <div class='content-create_text float-left'>Creating Context</div>
                                       <div class="accordion_text">
                                           <a href="" class='accordion_data'>today,13:40pm</a>
                                           <span class='accordion-create_user user--plus'>+3</span>
@@ -186,7 +198,8 @@
                                       </div>
                                   </div>
                                   <div class="accordion-content_ready clearfix">
-                                      <span class='content-ready_span float-left'>Implementation in the Layout</span>
+                                      <span class='content-ready_span float-left'>ready</span>
+                                      <div class='content-ready_text float-left'>Implementation in the Layout</div>
                                       <div class="accordion_text">
                                           <a href="" class='accordion_data'>yesterday,12:40pm</a>
                                           <span class='accordion-ready_user status--offline'></span>
@@ -198,14 +211,15 @@
 
                            <li class="accordion-item">
                               <a href="#panel1d" role="tab" class="accordion-title fixed--arrow" id="panel1d-heading" aria-controls="panel1d">
-                                  <span></span>
+                                  <span class='accordion-item_percent'>23%</span>
                                   Lorem ipsum dolor sit amet, consectetur <br>
                                    adipisicing elit. quisquam aliquam 
                                    <span class='accordion-item_title'>panarama</span>
                               </a>
                               <div id="panel1d" class="accordion-content pad--zero" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
                                   <div class="accordion-content_create clearfix">
-                                      <span class='content-create_span float-left'>Creating Context</span>
+                                      <span class='content-create_span float-left'>66%</span>
+                                      <div class='content-create_text float-left'>Creating Context</div>
                                       <div class="accordion_text">
                                           <a href="" class='accordion_data'>today,13:40pm</a>
                                           <span class='accordion-create_user user--plus'>+3</span>
@@ -215,7 +229,8 @@
                                       </div>
                                   </div>
                                   <div class="accordion-content_ready clearfix">
-                                      <span class='content-ready_span float-left'>Implementation in the Layout</span>
+                                      <span class='content-ready_span float-left'>ready</span>
+                                      <div class='content-ready_text float-left'>Implementation in the Layout</div>
                                       <div class="accordion_text">
                                           <a href="" class='accordion_data'>yesterday,12:40pm</a>
                                           <span class='accordion-ready_user status--offline'></span>
@@ -227,13 +242,14 @@
 
                            <li class="accordion-item">
                               <a href="#panel1d" role="tab" class="accordion-title fixed--arrow" id="panel1d-heading" aria-controls="panel1d">
-                                  <span></span>
+                                  <span class='accordion-item_percent'>98%</span>
                                   Create Contact Formular
                                   <span class='accordion-item_title'>worlda</span>
                               </a>
                               <div id="panel1d" class="accordion-content pad--zero" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
                                   <div class="accordion-content_create clearfix">
-                                      <span class='content-create_span float-left'>Creating Context</span>
+                                      <span class='content-create_span float-left'>66%</span>
+                                      <div class='content-create_text float-left'>Creating Context</div>
                                       <div class="accordion_text">
                                           <a href="" class='accordion_data'>today,13:40pm</a>
                                           <span class='accordion-create_user user--plus'>+3</span>
@@ -243,36 +259,8 @@
                                       </div>
                                   </div>
                                   <div class="accordion-content_ready clearfix">
-                                      <span class='content-ready_span float-left'>Implementation in the Layout</span>
-                                      <div class="accordion_text">
-                                          <a href="" class='accordion_data'>yesterday,12:40pm</a>
-                                          <span class='accordion-ready_user status--offline'></span>
-                                          <span class='accordion-ready_user status--online'></span>
-                                      </div>
-                                  </div>
-
-                              </div>
-                          </li>
-
-                           <li class="accordion-item">
-                              <a href="#panel1d" role="tab" class="accordion-title fixed--arrow" id="panel1d-heading" aria-controls="panel1d">
-                                  <span></span>
-                                  Create Contact Formular
-                                  <span class='accordion-item_title'>worlda</span>
-                              </a>
-                              <div id="panel1d" class="accordion-content pad--zero" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
-                                  <div class="accordion-content_create clearfix">
-                                      <span class='content-create_span float-left'>Creating Context</span>
-                                      <div class="accordion_text">
-                                          <a href="" class='accordion_data'>today,13:40pm</a>
-                                          <span class='accordion-create_user user--plus'>+3</span>
-                                          <span class='accordion-create_user status--offline'></span>
-                                          <span class='accordion-create_user status--online'></span>
-                                          <span class='accordion-create_user status--online'></span>
-                                      </div>
-                                  </div>
-                                  <div class="accordion-content_ready clearfix">
-                                      <span class='content-ready_span float-left'>Implementation in the Layout</span>
+                                      <span class='content-ready_span float-left'>ready</span>
+                                      <div class='content-ready_text float-left'>Implementation in the Layout</div>
                                       <div class="accordion_text">
                                           <a href="" class='accordion_data'>yesterday,12:40pm</a>
                                           <span class='accordion-ready_user status--offline'></span>
@@ -285,13 +273,14 @@
 
                            <li class="accordion-item">
                               <a href="#panel1d" role="tab" class="accordion-title fixed--arrow" id="panel1d-heading" aria-controls="panel1d">
-                                  <span></span>
+                                  <span class='accordion-item_percent'>98%</span>
                                   Create Contact Formular
                                   <span class='accordion-item_title'>worlda</span>
                               </a>
                               <div id="panel1d" class="accordion-content pad--zero" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
                                   <div class="accordion-content_create clearfix">
-                                      <span class='content-create_span float-left'>Creating Context</span>
+                                      <span class='content-create_span float-left'>66%</span>
+                                      <div class='content-create_text float-left'>Creating Context</div>
                                       <div class="accordion_text">
                                           <a href="" class='accordion_data'>today,13:40pm</a>
                                           <span class='accordion-create_user user--plus'>+3</span>
@@ -301,7 +290,39 @@
                                       </div>
                                   </div>
                                   <div class="accordion-content_ready clearfix">
-                                      <span class='content-ready_span float-left'>Implementation in the Layout</span>
+                                      <span class='content-ready_span float-left'>ready</span>
+                                      <div class='content-ready_text float-left'>Implementation in the Layout</div>
+                                      <div class="accordion_text">
+                                          <a href="" class='accordion_data'>yesterday,12:40pm</a>
+                                          <span class='accordion-ready_user status--offline'></span>
+                                          <span class='accordion-ready_user status--online'></span>
+                                      </div>
+                                  </div>
+
+                              </div>
+                          </li>
+
+                           <li class="accordion-item">
+                              <a href="#panel1d" role="tab" class="accordion-title fixed--arrow" id="panel1d-heading" aria-controls="panel1d">
+                                  <span class='accordion-item_percent'>98%</span>
+                                  Create Contact Formular
+                                  <span class='accordion-item_title'>worlda</span>
+                              </a>
+                              <div id="panel1d" class="accordion-content pad--zero" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
+                                  <div class="accordion-content_create clearfix">
+                                      <span class='content-create_span float-left'>66%</span>
+                                      <div class='content-create_text float-left'>Creating Context</div>
+                                      <div class="accordion_text">
+                                          <a href="" class='accordion_data'>today,13:40pm</a>
+                                          <span class='accordion-create_user user--plus'>+3</span>
+                                          <span class='accordion-create_user status--offline'></span>
+                                          <span class='accordion-create_user status--online'></span>
+                                          <span class='accordion-create_user status--online'></span>
+                                      </div>
+                                  </div>
+                                  <div class="accordion-content_ready clearfix">
+                                      <span class='content-ready_span float-left'>ready</span>
+                                      <div class='content-ready_text float-left'>Implementation in the Layout</div>
                                       <div class="accordion_text">
                                           <a href="" class='accordion_data'>yesterday,12:40pm</a>
                                           <span class='accordion-ready_user status--offline'></span>
@@ -311,8 +332,73 @@
                               </div>
                           </li>
                       </ul>
+                      <div class="accordion-bottom"><a href="#" class='accordion-bottom_archiv'>Project Archiv</a></div>
                     </div>
-                    <div class="small-4 columns">helo</div>
+
+                    <div class="small-4 columns">
+                         <ul class="list-users">
+                           <li>
+                              <a href="#" class="list-user_item">
+                                  <strong class='list-users_name'>Mark P.</strong>add an image into Worlda
+                              </a>
+                              <div class="list-user_data">today, 10:30PM</div>
+                          </li>
+                           <li>
+                              <a href="#" class="list-user_item">
+                                  <strong class='list-users_name'>Marvin S.</strong>add an image into Worlda
+                              </a>
+                              <div class="list-user_data">today, 10:30PM</div>
+                          </li>
+                           <li>
+                              <a href="#" class="list-user_item">
+                                  <strong class='list-users_name'>Sebastian K.</strong>add an image into Worlda
+                              </a>
+                              <div class="list-user_data">today, 10:30PM</div>
+                          </li>
+                           <li>
+                              <a href="#" class="list-user_item">
+                                  <strong class='list-users_name'>Mark P.</strong>add an image into Worlda
+                              </a>
+                              <div class="list-user_data">today, 10:30PM</div>
+                          </li>
+                           <li>
+                              <a href="#" class="list-user_item">
+                                  <strong class='list-users_name'>Philip O.</strong>add an image into Worlda
+                              </a>
+                              <div class="list-user_data">today, 10:30PM</div>
+                          </li>
+                           <li>
+                              <a href="#" class="list-user_item">
+                                  <strong class='list-users_name'>Mark P.</strong>add an image into Worlda
+                              </a>
+                              <div class="list-user_data">today, 10:30PM</div>
+                          </li>
+                           <li>
+                              <a href="#" class="list-user_item">
+                                  <strong class='list-users_name'>Benni I.</strong>add an image into Worlda
+                              </a>
+                              <div class="list-user_data">today, 10:30PM</div>
+                          </li>
+                           <li>
+                              <a href="#" class="list-user_item">
+                                  <strong class='list-users_name'>Benni I.</strong>add an image into Worlda
+                              </a>
+                              <div class="list-user_data">today, 10:30PM</div>
+                          </li>
+                           <li>
+                              <a href="#" class="list-user_item">
+                                  <strong class='list-users_name'>Benni I</strong>add an image into Worlda
+                              </a>
+                              <div class="list-user_data">today, 10:30PM</div>
+                          </li>
+                           <li>
+                              <a href="#" class="list-user_item">
+                                  <strong class='list-users_name'>Benni I</strong>add an image into Worlda
+                              </a>
+                              <div class="list-user_data">today, 10:30PM</div>
+                          </li>
+                         </ul>
+                    </div>
                   </div>
                 </div>
                 <div class="tabs-panel" id="panel2">
