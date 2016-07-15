@@ -3,7 +3,7 @@
 	background: url(../img/bg.gif) repeat-y;
 	text-align: center;
  }
- 
+
 .tabs-logo {
 	height: 165px;
 	position: relative;
@@ -85,7 +85,16 @@ a span,
 .vertical_settings .tabs-title [aria-selected='true'] i:before {
 	color: $global-color_red;
 }
-
-
+.vertical_settings .tabs-title:not(:nth-of-type(5)):before {
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	width: 5px;
+	height: 5px;
+	background: $global-color_disselect;
+	border-radius: 50%;
+	box-shadow: 10px 0 0 0px $global-color_disselect, -10px 0 0 0px $global-color_disselect;
+}
 
 
